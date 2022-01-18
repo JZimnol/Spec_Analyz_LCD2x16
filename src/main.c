@@ -94,7 +94,6 @@ int main() {
             /* colect proper samples to the LCD */
             FFT_CalculateColumns_256(BUFFER_0);
             FFTstatus.isBuffer0Ready = 0;
-            FFTstatus.readToBuffer0 = 1; 
             
             /* print frequency bins on lcd display */
             NVIC_DisableIRQ(PORTA_IRQn);
